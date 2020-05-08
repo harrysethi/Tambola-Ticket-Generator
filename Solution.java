@@ -50,7 +50,7 @@ public class Solution {
 		private void sortColumnWithThreeNumbers(int c) throws Exception {
 			int emptyCell = this.getEmptyCellInCol(c);
 			if (emptyCell != -1) {
-				throw new Exception("Sorry dude, your column has <3 cells, invalid function called");
+				throw new Exception("Hey! your column has <3 cells filled, invalid function called");
 			}
 
 			int tempArr[] = new int[] { this.A[0][c], this.A[1][c], this.A[2][c] };
@@ -60,11 +60,11 @@ public class Solution {
 				this.A[r][c] = tempArr[r];
 			}
 		}
-
+		
 		private void sortColumnWithTwoNumbers(int c) throws Exception {
 			int emptyCell = this.getEmptyCellInCol(c);
 			if (emptyCell == -1) {
-				throw new Exception("Sorry dude, your column has 3 cells, invalid function called");
+				throw new Exception("Hey! your column has 3 cells filled, invalid function called");
 			}
 
 			int cell1, cell2;
@@ -398,5 +398,4 @@ public class Solution {
 			}
 		}
 	}
-
 }
